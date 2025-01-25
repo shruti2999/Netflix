@@ -4,7 +4,8 @@ import cards_data from "../../assets/cards/Cards_data";
 
 const TitleCards = ({ title, category }) => {
   const [apiData, setapiData] = useState([]);
-  const cardRef = useRef();
+  const cardsRef = useRef();
+ 
   const options = {
     method: "GET",
     headers: {
@@ -22,20 +23,20 @@ const TitleCards = ({ title, category }) => {
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
-        category?category:"now_playing"
-      }?language=en-US&page=1`,
+        (category?category:"now_playing"
+    )}?language=en-US&page=1`,
       options
     )
       .then((res) => res.json())
       .then((res) => setapiData(res.results))
       .catch((err) => console.error(err));
 
-    cardRef.current.addEventListener("wheel", handlewheel);
+    cardsRef.current.addEventListener("wheel", handlewheel);
   }, []);
   return (
     <div className="title-Cards">
       <h2>{title ? title : "Popular on NetFlix"}</h2>
-      <div className="card-List" ref={cardRef}>
+      <div className="card-List" ref={cardsRef}>
         {apiData.map((card, index) => {
           return (
             <div className="card" key={index}>
