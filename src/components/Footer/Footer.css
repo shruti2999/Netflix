@@ -16,11 +16,16 @@
 .footer ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 30px;
     list-style: none;
     justify-content: center;
 }
+
+.footer ul li{
+    cursor: pointer;
+}
+
 .copyright-text{
     color: gray;
     font-size:14px;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css'
 import logo from '../../assets/logo.png'
+import{useState} from 'react'
 const Login = () => {
 
   
@@ -18,15 +19,15 @@ const Login = () => {
           <button>{signState}</button>
           <div className='form-help'>
             <div className="remember">
-                <input type="checkbox">
+                <input type="checkbox"/>
                 <label htmlFor="">Remember Me</label>
-                </input>
+                
             </div>
             <p>Need Help?</p>
           </div>
         </form>
         <div className='form-switch'>
-          {signState==="Sign-In"?<p>New to Netflix? <span onClick={()=>{setsignState("Sign Up")}}>
+          {signState==="Sign In"?<p>New to Netflix? <span onClick={()=>{setsignState("Sign Up")}}>
             Sign Up Now</span></p>
           :<p>Already have account?<span onClick={()=>{setsignState("Sign In")}}
           >Sign In Now</span></p>}
