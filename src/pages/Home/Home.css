@@ -8,18 +8,18 @@
    mask-image: linear-gradient(to right,transparent,black 75%);
     -weblit-mask-image: linear-gradient(to right,transparent,black 75%);
 }
-.hero-caption{
+.hero_caption{
     position: absolute;
     width:100%;
     padding-left: 6%;
     bottom: 0;
 }
-.caption-img{
+.caption_img{
     width :90%;
     max-width:420px;
     margin-bottom: 30px;
 }
-.hero-caption p{
+.hero_caption p{
     max-width:700px;
     font-size:17px;
     margin-bottom: 20px;
@@ -56,11 +56,11 @@
 .hero_btns .btn.dark-btn{
     background: #6d6d6e66;
 }
-.more-cards{
+.more_cards{
     padding-left: 6%;
 }
-@media  (max-width:1024px)  {
-    .hero-caption .title_cards{
+@media (max-width:1024px)  {
+    .hero_caption .title_cards{
         display: none;
     }
     .hero_btns{
@@ -68,26 +68,26 @@
     }
 }
 @media (max-width:1024px){
-    .hero-caption{
+    .hero_caption{
         padding-left: 10px;
     }
-    .caption-img{
+    .caption_img{
         margin-bottom: 10px;
         width: 40%;
     }
-    .hero-caption p{
+    .hero_caption p{
         font-size:12px;
         margin-bottom: 10px;
     }
     .hero_btns .btn img{
         width: 20px;
     }
-    .more-cards{
+    .more_cards{
         padding-left: 4%;
     }
 }
 @media (max-width:500px){
-    .caption-img{
+    .caption_img{
         display: none;
     }
     .hero_btns .btn img{
