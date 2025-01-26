@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth,  signInWithEmailAndPassword } from "firebase/auth";
 import { EmailAuthProvider } from "firebase/auth/web-extension";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDt2tE9GmTICalkqW5PyauFSD3Cr19wQ9g",
@@ -29,7 +30,7 @@ const signup= async(name,EmailAuthCredential,password)=>{
        })
     }catch(error){
         console.log(error)
-        alert(error);
+        toast.error(error.code);
     }
 }
 const login =async ()=>{
@@ -37,7 +38,7 @@ const login =async ()=>{
        await signInWithEmailAndPassword(auth, email,password)
     }catch(error){
         console.log(error);
-        alert(error);
+        toast.error(error.code);
     }
 }
 
