@@ -30,7 +30,7 @@ const signup= async(name,EmailAuthCredential,password)=>{
        })
     }catch(error){
         console.log(error)
-        toast.error(error.code);
+        toast.error(error.code.split('/')[1].spilt('-').join(" "));
     }
 }
 const login =async ()=>{
@@ -38,7 +38,7 @@ const login =async ()=>{
        await signInWithEmailAndPassword(auth, email,password)
     }catch(error){
         console.log(error);
-        toast.error(error.code);
+        toast.error(error.code.split('/')[1].spilt('-').join(" "));
     }
 }
 
