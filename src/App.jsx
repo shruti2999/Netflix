@@ -27,9 +27,9 @@ const navigate =useNavigate();
     <div>
     <ToastContainer theme='dark' />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/player/:id' element={<Player/>}/>
+        <Route path='/' caseSensitive={false}  element={<Home/>}/>
+        <Route path='/login' caseSensitive={false} element={<Login/>}/>
+        <Route path='/player/:id' caseSensitive={false} element={<Player/>}/>
       </Routes>
     </div>
   )
