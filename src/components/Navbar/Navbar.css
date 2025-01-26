@@ -10,16 +10,16 @@
     transparent);
     z-index: 1;
 }
-.nnavbar_left{
+.navbar_left{
     display: flex;
     align-items: center;
     gap: 50px;
 
 }
-.nnavbar_left img{
+.navbar_left img{
     width: 90px;
 }
-.nnavbar_left ul{
+.navbar_left ul{
    display: flex;
    list-style: none;
    gap: 20px;
@@ -34,7 +34,7 @@
     gap: 20px;
     align-items: center;
 }
-.navbar_right.icons{
+.navbar_right .icons{
     width: 20px;
     cursor: pointer;
 }
@@ -76,7 +76,7 @@
     .navbar{
         padding: 20px 4%;
     }
-    .nnavbar_left ul{
+    .navbar_left ul{
         display: none;
     }
     .navbar img{
