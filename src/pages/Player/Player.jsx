@@ -1,5 +1,5 @@
 //import React from 'react'
-import './player.css'
+import './Player.css'
 import back_arrow from '../../assets/back_arrow_icon.png'
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
