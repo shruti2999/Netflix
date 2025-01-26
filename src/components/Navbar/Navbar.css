@@ -4,7 +4,7 @@
     display:flex;
     justify-content: space-between;
     position: fixed;
-    font-size:  12px; 
+    font-size:  14px; 
     color: #e5e5e5; 
     background-image: linear-gradient(180deg,(rgba0,0,0,0.7) 10%,
     transparent);
@@ -23,9 +23,12 @@
    display: flex;
    list-style: none;
    gap: 20px;
-   cursor: pointer;
    
 }
+.navbar_left ul li{
+    cursor: pointer;
+}
+
 .navbar_right{
     display: flex;
     gap: 20px;
@@ -35,9 +38,9 @@
     width: 20px;
     cursor: pointer;
 }
-.navbar_right.profile{
+.navbar_right .profile{
     border-radius: 4px;
-    width: 35px;
+    width: 40px;
 }
 .navbar_profile{
     display: flex;
@@ -59,7 +62,7 @@
     display: none;
     
 }
-.navbar.dropdown p{
+.navbar .dropdown p{
     font-size: 13px;
     cursor: pointer;
 }
