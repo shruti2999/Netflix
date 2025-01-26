@@ -7,7 +7,7 @@ import twitter_icon from '../../assets/twitter_icon.png'
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className="footer-icons">
+      <div className="footer_icons">
         <img src = {youtube_icon} alt=""/>
         <img src = {instagram_icon} alt=""/>
         <img src = {facebook_icon} alt=""/>

@@ -1,8 +1,8 @@
-.title-Cards{
+.title_cards{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.title-Cards h2{
+.title_cards h2{
     margin-bottom: 8px;
 }
 .card-List{
@@ -30,12 +30,12 @@
 
 }
 @media (max-width:800px) {
-    .title-Cards{
+    .title_cards{
 
         margin-top: 20px;
         margin-bottom: 0;
     }
-    .title-Cards h2{
+    .title_cards h2{
        font-size: 20px; 
     }
     .card-List img{
@@ -44,7 +44,7 @@
 }
 @media (max-width:500px) {
     
-    .title-Cards h2{
+    .title_cards h2{
        font-size: 12px; 
     }
     .card-List img{

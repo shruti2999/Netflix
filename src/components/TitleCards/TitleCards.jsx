@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TitleCards.css";
-import cards_data from "../../assets/cards/Cards_data";
-import {Links} from 'react-router-dom'
+//import cards_data from "../../assets/cards/Cards_data";
+import {Link} from 'react-router-dom'
 
 const TitleCards = ({ title, category }) => {
   const [apiData, setapiData] = useState([]);
@@ -18,7 +18,7 @@ const TitleCards = ({ title, category }) => {
 
   const handlewheel = (event) => {
     event.preventDefault();
-    cardRef.current.scrollLeft += event.deltaY;
+    cardsRef.current.scrollLeft += event.deltaY;
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const TitleCards = ({ title, category }) => {
     cardsRef.current.addEventListener("wheel", handlewheel);
   }, []);
   return (
-    <div className="title-Cards">
+    <div className="title_cards">
       <h2>{title ? title : "Popular on NetFlix"}</h2>
       <div className="card-List" ref={cardsRef}>
         {apiData.map((card, index) => {

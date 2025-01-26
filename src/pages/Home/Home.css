@@ -60,7 +60,7 @@
     padding-left: 6%;
 }
 @media  (max-width:1024px)  {
-    .hero-caption .title-Cards{
+    .hero-caption .title_cards{
         display: none;
     }
     .hero_btns{
