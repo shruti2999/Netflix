@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-const navigate =useNavigate();
+const navigate = useNavigate();
 
   useEffect(()=>{
     onAuthStateChanged(auth , async(user)=>{
@@ -22,14 +22,15 @@ const navigate =useNavigate();
         navigate('/login');
       }
     })
-  })
+  },[])
+  
   return (
     <div>
     <ToastContainer theme='dark' />
       <Routes>
-        <Route path='/' caseSensitive={false}  element={<Home/>}/>
-        <Route path='/login' caseSensitive={false} element={<Login/>}/>
-        <Route path='/player/:id' caseSensitive={false} element={<Player/>}/>
+        <Route path='/'  element={<Home/>}/>
+        <Route path='/login'element={<Login/>}/>
+        <Route path='/player/:id' element={<Player/>}/>
       </Routes>
     </div>
   )
